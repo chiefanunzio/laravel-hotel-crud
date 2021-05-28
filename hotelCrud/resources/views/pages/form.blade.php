@@ -13,5 +13,6 @@
     <input type="text" placeholder="inserisci la tua ral" name="ral" id="ral">
     <input type="submit" value="aggiungi nuovo dipendente">
 </form>      
-   
-@endsection      
+
+      
+@endsection         

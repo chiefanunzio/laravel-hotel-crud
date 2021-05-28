@@ -10,9 +10,9 @@
         @foreach ($employees as $employee)
         <li>
             <span>{{$employee->firstname}} --> {{$employee->lastname}}</span>
-            <a href="{{route('employee', $employee ->id)}}">Vedi Dettagli employee</a>
+            <a href="{{route('employee', $employee ->id)}}">modifica</a>
+            
         </li>   
         @endforeach
-    </ul>             
-</div>                                               
-@endsection       
+    </ul>                
+@endsection                

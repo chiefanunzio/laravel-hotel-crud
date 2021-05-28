@@ -37,9 +37,45 @@ class crudController extends Controller
               
       
          ]);   
-        
+           
          $addDB = Employee::create($validate);             
         return redirect() -> route('employee',$addDB ->id );      
     }
-}
+
+    public function delete($id){
+
+        $employee = Employee::findOrFail($id);   
+   
+        $employee -> delete();
+           
+        return redirect() -> route('home');       
+           
+   
+    }   
+
+    public function edit($id){
+
+        $employee = Employee::findOrFail($id);  
+        return view('pages.update',compact('employee'));   
+    }   
+
+    public function update(Request $request, $id){   
+    
+             $validate = $request -> validate([
+    
+                'firstname' => 'max:50' ,
+                'lastname' => 'max:50',    
+                'role' => 'max:50' ,   
+                'ral' => 'numeric' ,
+                     
+          
+             ]);   
+    
+             $employee = Employee::findOrFail($id);
+              
+             $employee -> update($validate);
+                     
+            return redirect() -> route('employee',$employee ->id );         
+        }   
+}   
    
