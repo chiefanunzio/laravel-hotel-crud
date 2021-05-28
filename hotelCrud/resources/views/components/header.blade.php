@@ -1,1 +1,5 @@
-       <h2>header</h2>   
+
+<header>
+       <h1>HOTEL</h1>
+</header>
+   
