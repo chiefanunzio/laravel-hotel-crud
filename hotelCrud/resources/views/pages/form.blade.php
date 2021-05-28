@@ -11,7 +11,7 @@
     <input type="text" placeholder="inserisci il tuo cognome" name="lastname" id="lastname">
     <input type="text" placeholder="inserisci il tuo ruolo" name="role" id="role">
     <input type="text" placeholder="inserisci la tua ral" name="ral" id="ral">
-    <input type="submit" value="aggiungi nuovo ospite">
+    <input type="submit" value="aggiungi nuovo dipendente">
 </form>      
    
-@endsection   
+@endsection      
